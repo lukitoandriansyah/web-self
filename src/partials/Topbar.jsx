@@ -59,14 +59,14 @@ export default function Topbar(){
                     </ul>
                 </li>
             </ul>*/}
-            <div className="nav">
+            <div className="nav btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0">
                 {/*<div className="sb-sidenav-menu-heading">Core</div>*/}
                 <a className="nav-link" onClick={()=>localStorage.setItem("counter","1")} href="/#/home">
                    <i className="fas fa-home"></i>
                     Home
                 </a>
                 <a className="nav-link" onClick={()=>localStorage.setItem("counter","1")} href="/#/profile">
-                    <i className="fas fa-user"></div>
+                    <i className="fas fa-user"/>
                     Profile
                 </a>
                 <a className="nav-link collapsed" href={"/#/project/lukito"} onClick={()=>localStorage.setItem("counter","1")}
