@@ -62,22 +62,22 @@ export default function Topbar(){
             <div className="nav">
                 {/*<div className="sb-sidenav-menu-heading">Core</div>*/}
                 <a className="nav-link" onClick={()=>localStorage.setItem("counter","1")} href="/#/home">
-                    <div className="sb-nav-link-icon"><i className="fas fa-home"></i></div>
+                   <i className="fas fa-home"></i>
                     Home
                 </a>
                 <a className="nav-link" onClick={()=>localStorage.setItem("counter","1")} href="/#/profile">
-                    <div className="sb-nav-link-icon"><i className="fas fa-user"></i></div>
+                    <i className="fas fa-user"></div>
                     Profile
                 </a>
                 <a className="nav-link collapsed" href={"/#/project/lukito"} onClick={()=>localStorage.setItem("counter","1")}
                    data-bs-toggle="collapse" data-bs-target="#collapseProject" aria-expanded="false" aria-controls="collapseProject">
-                    <div className="sb-nav-link-icon"><i className="fas fa-book-open"></i></div>
+                    <i className="fas fa-book-open"></i>
                     Projects
                     <div className="sb-sidenav-collapse-arrow"><i className="fas fa-angle-down"></i></div>
                 </a>
                 <div className="collapse" id="collapseProject" aria-labelledby="headingOne"
                      data-bs-parent="#sidenavAccordion">
-                    <nav className="sb-sidenav-menu-nested nav">
+                    <nav className="nav">
                         <a className="nav-link" href="/#/project/lukito/backend">BackEnd</a>
                         <a className="nav-link" href="/#/project/lukito/frontend">FrontEnd</a>
                         <a className="nav-link" href="/#/project/lukito/novel">Novel</a>
