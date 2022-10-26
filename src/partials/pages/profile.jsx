@@ -1,6 +1,7 @@
 import {pathrule} from "../../main/pathMain/path.jsx";
 import {Link, Navigate, useLocation} from "react-router-dom";
 import Footer from "../Footer";
+import {developer} from "../../assets/developer.png";
 
 export default function Profile() {
     if (localStorage.getItem("trigger")) {
@@ -74,7 +75,7 @@ export default function Profile() {
                                                         <i>
                                                             <br/>
                                                             <img
-                                                                src={"assets/developer.png"}
+                                                                src={developer}
                                                                 className={"card-img rounded-circle"}
                                                             />
                                                             <b className="small text-white align-content-center">
