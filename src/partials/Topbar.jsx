@@ -61,16 +61,15 @@ export default function Topbar() {
                 </li>
             </ul>*/}
             {/*<div className="sb-sidenav-menu-heading">Core</div>*/}
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <a className={" text-white"} href="/#/home">
                 Home
             </a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <a className={" text-white"} href="/#/profile">
                 Profile
             </a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <a className={" text-white"} href={"/#/project/lukito"}
                /*onClick={() => localStorage.setItem("counter", "1")}
                data-bs-toggle="collapse" data-bs-target="#collapseProject" aria-expanded="false"
