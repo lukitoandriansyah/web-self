@@ -61,27 +61,19 @@ export default function Topbar() {
                 </li>
             </ul>*/}
             {/*<div className="sb-sidenav-menu-heading">Core</div>*/}
-            <div className={"row"}>
-                <div className={"col-xl-4 col-md-6"}/>
-                <div className={"col-xl-4 col-md-6"}>
-                    <div className={"col-xl-4 col-md-6"}>
-                        <a className={"text-center text-center"} onClick={() => localStorage.setItem("counter", "1")} href="/#/home">
-                            Home
-                        </a>
-                    </div>
-                    <div className={"col-xl-4 col-md-6"}>
-                        <a className={"text-center text-center"} onClick={() => localStorage.setItem("counter", "1")} href="/#/profile">
-                            Profile
-                        </a>
-                    </div>
-                    <div className={"col-xl-4 col-md-6"}>
-                        <a  className={"text-center text-center"} href={"/#/project/lukito"}
-                            /*onClick={() => localStorage.setItem("counter", "1")}
-                            data-bs-toggle="collapse" data-bs-target="#collapseProject" aria-expanded="false"
-                            aria-controls="collapseProject"*/>
-                            Projects
-                        </a>
-                        {/*<div className="collapse" id="collapseProject" aria-labelledby="headingOne"
+            <a className={"text-center text-center"} onClick={() => localStorage.setItem("counter", "1")} href="/#/home">
+                Home
+            </a>
+            <a className={"text-center text-center"} onClick={() => localStorage.setItem("counter", "1")} href="/#/profile">
+                Profile
+            </a>
+            <a  className={"text-center text-center"} href={"/#/project/lukito"}
+               /*onClick={() => localStorage.setItem("counter", "1")}
+               data-bs-toggle="collapse" data-bs-target="#collapseProject" aria-expanded="false"
+               aria-controls="collapseProject"*/>
+                Projects
+            </a>
+            {/*<div className="collapse" id="collapseProject" aria-labelledby="headingOne"
                  data-bs-parent="#sidenavAccordion">
                 <nav className="nav">
                     <a className="nav-link" href="/#/project/lukito/backend">BackEnd</a>
@@ -90,11 +82,6 @@ export default function Topbar() {
                     <a className="nav-link" href="/#/project/lukito/song">Song</a>
                 </nav>
             </div>*/}
-                    </div>
-                </div>
-                <div className={"col-xl-4 col-md-6"}/>
-
-            </div>
         </nav>
         <br/>
         <br/>
