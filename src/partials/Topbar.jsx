@@ -35,8 +35,8 @@ export default function Topbar(){
     return<>
         <nav className="sb-topnav navbar navbar-expand navbar-dark bg-dark">
             <a className="navbar-brand ps-3" href="#">Lukito Andriansyah</a>
-            <button className="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#" onDOMContentLoaded = {(event) => {toggleSet(event)}}><i
-                className="fas fa-bars"></i></button>
+           {/* <button className="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#" onDOMContentLoaded = {(event) => {toggleSet(event)}}><i
+                className="fas fa-bars"></i></button>*/}
             {/*<form className="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
                 <div className="input-group">
                     <input className="form-control" type="text" placeholder="Search for..." aria-label="Search for..."
@@ -61,13 +61,13 @@ export default function Topbar(){
             </ul>*/}
             <div className="nav btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0 text-white">
                 {/*<div className="sb-sidenav-menu-heading">Core</div>*/}
-                <a className="nav-link" onClick={()=>localStorage.setItem("counter","1")} href="/#/home">
+                <a className="nav-link navbar-brand ps-3" onClick={()=>localStorage.setItem("counter","1")} href="/#/home">
                     Home
                 </a>
-                <a className="nav-link" onClick={()=>localStorage.setItem("counter","1")} href="/#/profile">
+                <a className="nav-link navbar-brand ps-3" onClick={()=>localStorage.setItem("counter","1")} href="/#/profile">
                     Profile
                 </a>
-                <a className="nav-link collapsed" href={"/#/project/lukito"} onClick={()=>localStorage.setItem("counter","1")}
+                <a className="nav-link collapsed navbar-brand ps-3" href={"/#/project/lukito"} onClick={()=>localStorage.setItem("counter","1")}
                    data-bs-toggle="collapse" data-bs-target="#collapseProject" aria-expanded="false" aria-controls="collapseProject">
                     Projects
                 </a>
