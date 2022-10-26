@@ -46,7 +46,7 @@ export default function Home() {
                                     <li className="breadcrumb-item active">Home</li>
                                 </ol>
                                 <div className={"row"}>
-                                    <div className={"card bg-info mt-4 mb-4 text-center text-white"}>
+                                    <div className={"card bg-info mt-4 mb-4 text-center align-content-center text-white"}>
                                         <i className="fa fa-info" aria-hidden="true"/>
                                         <br/>
                                         <h6>This web still in progress to build, some feature might be can't running perfectly.</h6>
