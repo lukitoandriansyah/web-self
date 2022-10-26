@@ -73,7 +73,6 @@ export default function Topbar(){
                    data-bs-toggle="collapse" data-bs-target="#collapseProject" aria-expanded="false" aria-controls="collapseProject">
                     <i className="fas fa-book-open"></i>
                     Projects
-                    <div className="sb-sidenav-collapse-arrow"><i className="fas fa-angle-down"></i></div>
                 </a>
                 <div className="collapse" id="collapseProject" aria-labelledby="headingOne"
                      data-bs-parent="#sidenavAccordion">
