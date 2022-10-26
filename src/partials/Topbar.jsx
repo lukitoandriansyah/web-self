@@ -59,7 +59,6 @@ export default function Topbar(){
                     </ul>
                 </li>
             </ul>*/}
-            <div className="nav text-white">
                 {/*<div className="sb-sidenav-menu-heading">Core</div>*/}
                 <a className="nav-link navbar-brand" onClick={()=>localStorage.setItem("counter","1")} href="/#/home">
                     Home
@@ -80,7 +79,6 @@ export default function Topbar(){
                         <a className="nav-link" href="/#/project/lukito/song">Song</a>
                     </nav>
                 </div>
-            </div>
         </nav>
         <br/>
         <br/>
