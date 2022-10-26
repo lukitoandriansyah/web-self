@@ -7,11 +7,6 @@ import {useEffect, useState} from "react";
 export default function Home() {
     const [isLoading, setIsLoading] = useState(false)
 
-    localStorage.getItem("counter")?
-        ""
-        :
-        localStorage.setItem("counter","1")
-
     if (localStorage.getItem("trigger")) {
         if (pathrule.indexOf(useLocation().pathname).toString() >= 0) {
             localStorage.setItem("trigger", pathrule.indexOf(useLocation().pathname).toString())
