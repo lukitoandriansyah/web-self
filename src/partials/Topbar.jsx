@@ -34,7 +34,7 @@ export default function Topbar() {
     }
 
     return <>
-        <nav className="sb-topnav navbar-brand navbar-dark bg-dark">
+        <nav className="sb-topnav navbar-brand navbar-dark bg-dark align-content-center">
            {/* <a className="navbar-brand ps-3" href="#">Lukito Andriansyah</a>*/}
             {/* <button className="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#" onDOMContentLoaded = {(event) => {toggleSet(event)}}><i
                 className="fas fa-bars"></i></button>*/}
@@ -61,13 +61,13 @@ export default function Topbar() {
                 </li>
             </ul>*/}
             {/*<div className="sb-sidenav-menu-heading">Core</div>*/}
-            <a className={"center text-white"} href="/#/home">
+            <a className={" text-white"} href="/#/home">
                 Home
             </a>
-            <a className={"center text-white"} href="/#/profile">
+            <a className={" text-white"} href="/#/profile">
                 Profile
             </a>
-            <a className={"center text-white"} href={"/#/project/lukito"}
+            <a className={" text-white"} href={"/#/project/lukito"}
                /*onClick={() => localStorage.setItem("counter", "1")}
                data-bs-toggle="collapse" data-bs-target="#collapseProject" aria-expanded="false"
                aria-controls="collapseProject"*/>
