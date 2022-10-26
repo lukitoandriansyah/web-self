@@ -31,82 +31,84 @@ export default function Home() {
     return <>
         {/*<div id="layoutSidenav">
             <div id="layoutSidenav_content">*/}
-                {
-                    isLoading ?
-                        <div className={"d-flex justify-content-center"}>
-                            <Spinner/>
-                        </div>
-                        :
-                        <>
-                            <div className="container-fluid px-4">
-                                <h1 className="mt-4">Welcome in My Personal Website</h1>
-                                <ol className="breadcrumb mb-4">
-                                    <li className="breadcrumb-item active">Home</li>
-                                </ol>
-                                <div className={"row"}>
-                                    <div className={"card bg-light text-white"}>
-                                        <div className={"card-body bg-primary mt-4 mb-4 text-center"}>
-                                            <h3>Hallo! I'm Lukito Andriansyah<br/><br/></h3>
-                                            <h6>This page would be contain about all my professional activity in
-                                                programming, song writer, etc.<br/></h6>
-                                            <h6>Hopefully we can interacted more intends.<br/><br/></h6>
+        <div className={"layout_content"}>
+            {
+                isLoading ?
+                    <div className={"d-flex justify-content-center"}>
+                        <Spinner/>
+                    </div>
+                    :
+                    <>
+                        <div className="container-fluid px-4">
+                            <h1 className="mt-4">Welcome in My Personal Website</h1>
+                            <ol className="breadcrumb mb-4">
+                                <li className="breadcrumb-item active">Home</li>
+                            </ol>
+                            <div className={"row"}>
+                                <div className={"card bg-light text-white"}>
+                                    <div className={"card-body bg-primary mt-4 mb-4 text-center"}>
+                                        <h3>Hallo! I'm Lukito Andriansyah<br/><br/></h3>
+                                        <h6>This page would be contain about all my professional activity in
+                                            programming, song writer, etc.<br/></h6>
+                                        <h6>Hopefully we can interacted more intends.<br/><br/></h6>
 
-                                            <h5>Regards,<br/></h5>
-                                            <i className="fa fa-smile fa-3x" aria-hidden="true"/>
-                                            <br/>
-                                        </div>
+                                        <h5>Regards,<br/></h5>
+                                        <i className="fa fa-smile fa-3x" aria-hidden="true"/>
+                                        <br/>
                                     </div>
-                                </div>
-                                <br/>
-                                <div className="row">
-                                    <div className="col-xl-1 col-md-6"/>
-                                    <div className="col-xl-4 col-md-6">
-                                        <div className="card bg-danger text-white text-center mb-4">
-                                            <div className={"row"}>
-                                                <div className={"col-xl-8 col-md-6"}>
-                                                    <div className="card-body text-white">
-                                                        <a onClick={() => localStorage.setItem("counter", "1")}
-                                                           href={"/#/profile"}
-                                                           className={"text-white"}><strong>Profile</strong></a>
-                                                    </div>
-                                                </div>
-                                                <div className={"col-xl-4 col-md-6"}>
-                                                    <div className="card-body"><i className="fa fa-user fa-2x"
-                                                                                  aria-hidden="true"/></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-xl-1 col-md-6"/>
-                                    <div className="col-xl-1 col-md-6"/>
-                                    <div className="col-xl-4 col-md-6">
-                                        <div className="card bg-warning text-white text-center mb-4">
-                                            <div className={"row"}>
-                                                <div className={"col-xl-8 col-md-6"}>
-                                                    <div className="card-body text-white">
-                                                        <a onClick={() => localStorage.setItem("counter", "1")}
-                                                           href={"/#/project/lukito"}
-                                                           className={"text-white"}><strong>Project</strong></a>
-                                                    </div>
-                                                </div>
-                                                <div className={"col-xl-4 col-md-6"}>
-                                                    <div className="card-body"><i className="fa fa-book-open fa-2x"
-                                                                                  aria-hidden="true"/></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-xl-1 col-md-6"/>
                                 </div>
                             </div>
-                            <Footer/>
-                        </>
+                            <br/>
+                            <div className="row">
+                                <div className="col-xl-1 col-md-6"/>
+                                <div className="col-xl-4 col-md-6">
+                                    <div className="card bg-danger text-white text-center mb-4">
+                                        <div className={"row"}>
+                                            <div className={"col-xl-8 col-md-6"}>
+                                                <div className="card-body text-white">
+                                                    <a onClick={() => localStorage.setItem("counter", "1")}
+                                                       href={"/#/profile"}
+                                                       className={"text-white"}><strong>Profile</strong></a>
+                                                </div>
+                                            </div>
+                                            <div className={"col-xl-4 col-md-6"}>
+                                                <div className="card-body"><i className="fa fa-user fa-2x"
+                                                                              aria-hidden="true"/></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-xl-1 col-md-6"/>
+                                <div className="col-xl-1 col-md-6"/>
+                                <div className="col-xl-4 col-md-6">
+                                    <div className="card bg-warning text-white text-center mb-4">
+                                        <div className={"row"}>
+                                            <div className={"col-xl-8 col-md-6"}>
+                                                <div className="card-body text-white">
+                                                    <a onClick={() => localStorage.setItem("counter", "1")}
+                                                       href={"/#/project/lukito"}
+                                                       className={"text-white"}><strong>Project</strong></a>
+                                                </div>
+                                            </div>
+                                            <div className={"col-xl-4 col-md-6"}>
+                                                <div className="card-body"><i className="fa fa-book-open fa-2x"
+                                                                              aria-hidden="true"/></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-xl-1 col-md-6"/>
+                            </div>
+                        </div>
+                        <Footer/>
+                    </>
 
-                }
+            }
 
-{/*
+            {/*
             </div>
         </div>*/}
+        </div>
     </>
 }
 
