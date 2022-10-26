@@ -34,7 +34,7 @@ export default function Topbar() {
     }
 
     return <>
-        <nav className="sb-topnav navbar navbar-dark bg-dark">
+        <nav className="sb-topnav navbar-dark bg-dark">
            {/* <a className="navbar-brand ps-3" href="#">Lukito Andriansyah</a>*/}
             {/* <button className="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#" onDOMContentLoaded = {(event) => {toggleSet(event)}}><i
                 className="fas fa-bars"></i></button>*/}
@@ -61,19 +61,27 @@ export default function Topbar() {
                 </li>
             </ul>*/}
             {/*<div className="sb-sidenav-menu-heading">Core</div>*/}
-            <a className={"text-center text-center"} onClick={() => localStorage.setItem("counter", "1")} href="/#/home">
-                Home
-            </a>
-            <a className={"text-center text-center"} onClick={() => localStorage.setItem("counter", "1")} href="/#/profile">
-                Profile
-            </a>
-            <a  className={"text-center text-center"} href={"/#/project/lukito"}
-               /*onClick={() => localStorage.setItem("counter", "1")}
-               data-bs-toggle="collapse" data-bs-target="#collapseProject" aria-expanded="false"
-               aria-controls="collapseProject"*/>
-                Projects
-            </a>
-            {/*<div className="collapse" id="collapseProject" aria-labelledby="headingOne"
+            <div className={"row"}>
+                <div className={"col-xl-4 col-md-6"}/>
+                <div className={"col-xl-4 col-md-6"}>
+                    <div className={"col-xl-4 col-md-6"}>
+                        <a className={"text-center text-center"} onClick={() => localStorage.setItem("counter", "1")} href="/#/home">
+                            Home
+                        </a>
+                    </div>
+                    <div className={"col-xl-4 col-md-6"}>
+                        <a className={"text-center text-center"} onClick={() => localStorage.setItem("counter", "1")} href="/#/profile">
+                            Profile
+                        </a>
+                    </div>
+                    <div className={"col-xl-4 col-md-6"}>
+                        <a  className={"text-center text-center"} href={"/#/project/lukito"}
+                            /*onClick={() => localStorage.setItem("counter", "1")}
+                            data-bs-toggle="collapse" data-bs-target="#collapseProject" aria-expanded="false"
+                            aria-controls="collapseProject"*/>
+                            Projects
+                        </a>
+                        {/*<div className="collapse" id="collapseProject" aria-labelledby="headingOne"
                  data-bs-parent="#sidenavAccordion">
                 <nav className="nav">
                     <a className="nav-link" href="/#/project/lukito/backend">BackEnd</a>
@@ -82,6 +90,11 @@ export default function Topbar() {
                     <a className="nav-link" href="/#/project/lukito/song">Song</a>
                 </nav>
             </div>*/}
+                    </div>
+                </div>
+                <div className={"col-xl-4 col-md-6"}/>
+
+            </div>
         </nav>
         <br/>
         <br/>
