@@ -59,7 +59,7 @@ export default function Topbar(){
                     </ul>
                 </li>
             </ul>*/}
-            <div className="nav btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0">
+            <div className="nav btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0 text-white">
                 {/*<div className="sb-sidenav-menu-heading">Core</div>*/}
                 <a className="nav-link" onClick={()=>localStorage.setItem("counter","1")} href="/#/home">
                    <i className="fas fa-home"></i>
