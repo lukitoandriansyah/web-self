@@ -61,9 +61,9 @@ export default function Footer() {
                     <div className="d-flex align-items-center justify-content-between small">
                         <div className="text-muted">Copyright &copy; Lukito Andriansyah 2022</div>
                         <div>
-                            <a href="#">Privacy Policy</a>
+                            <a href="/#/privacy-policy">Privacy Policy</a>
                             &middot;
-                            <a href="#">Terms &amp; Conditions</a>
+                            <a href="/#/term-condition">Terms &amp; Conditions</a>
                         </div>
                     </div>
                 </div>

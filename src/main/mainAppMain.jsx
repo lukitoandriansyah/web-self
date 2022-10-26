@@ -29,6 +29,8 @@ ReactDOM.createRoot(document.getElementById('main')).render(
                   <Route path={"project/lukito/frontend"} element={<FrontEnd/>}/>
                   <Route path={"project/lukito/novel"} element={<PageIsBuild/>}/>
                   <Route path={"project/lukito/song"} element={<PageIsBuild/>}/>
+                  <Route path={"privacy-policy"} element={<PageIsBuild/>}/>
+                  <Route path={"term-condition"} element={<PageIsBuild/>}/>
               </Route>
           </Routes>
       </HashRouter>
