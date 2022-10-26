@@ -34,7 +34,7 @@ export default function Topbar() {
     }
 
     return <>
-        <nav className="sb-topnav navbar navbar-expand navbar-dark bg-dark text-center text-center">
+        <nav className="sb-topnav navbar navbar-expand navbar-dark bg-dark">
            {/* <a className="navbar-brand ps-3" href="#">Lukito Andriansyah</a>*/}
             {/* <button className="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#" onDOMContentLoaded = {(event) => {toggleSet(event)}}><i
                 className="fas fa-bars"></i></button>*/}
@@ -61,13 +61,13 @@ export default function Topbar() {
                 </li>
             </ul>*/}
             {/*<div className="sb-sidenav-menu-heading">Core</div>*/}
-            <a onClick={() => localStorage.setItem("counter", "1")} href="/#/home">
+            <a className={"text-center text-center"} onClick={() => localStorage.setItem("counter", "1")} href="/#/home">
                 Home
             </a>
-            <a onClick={() => localStorage.setItem("counter", "1")} href="/#/profile">
+            <a className={"text-center text-center"} onClick={() => localStorage.setItem("counter", "1")} href="/#/profile">
                 Profile
             </a>
-            <a  href={"/#/project/lukito"}
+            <a  className={"text-center text-center"} href={"/#/project/lukito"}
                /*onClick={() => localStorage.setItem("counter", "1")}
                data-bs-toggle="collapse" data-bs-target="#collapseProject" aria-expanded="false"
                aria-controls="collapseProject"*/>
