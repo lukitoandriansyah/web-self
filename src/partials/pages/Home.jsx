@@ -12,7 +12,7 @@ export default function Home() {
             localStorage.setItem("trigger", pathrule.indexOf(useLocation().pathname).toString())
             if (localStorage.getItem("counter")) {
                 localStorage.removeItem("counter")
-                window.location.reload()
+                window.location.reload(<Spinner/>)
 
             }
         }
