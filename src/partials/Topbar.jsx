@@ -63,15 +63,18 @@ export default function Topbar(){
                 {/*<div className="sb-sidenav-menu-heading">Core</div>*/}
                 <a className="nav-link" onClick={()=>localStorage.setItem("counter","1")} href="/#/home">
                    <i className="fas fa-home"></i>
+                    &nbsp;&nbsp;&nbsp;
                     Home
                 </a>
                 <a className="nav-link" onClick={()=>localStorage.setItem("counter","1")} href="/#/profile">
                     <i className="fas fa-user"/>
+                    &nbsp;&nbsp;&nbsp;
                     Profile
                 </a>
                 <a className="nav-link collapsed" href={"/#/project/lukito"} onClick={()=>localStorage.setItem("counter","1")}
                    data-bs-toggle="collapse" data-bs-target="#collapseProject" aria-expanded="false" aria-controls="collapseProject">
                     <i className="fas fa-book-open"></i>
+                    &nbsp;&nbsp;&nbsp;
                     Projects
                 </a>
                 <div className="collapse" id="collapseProject" aria-labelledby="headingOne"
