@@ -29,6 +29,17 @@ export default function Novelist() {
     <Topbar/>
                 <div className="container-fluid px-4 text-center align-items-md-center align-content-center">
                     <h1 className="mt-4 align-content-center">Lukito Andriansyah</h1>
+                    <div className={"row"}>
+                        <div className={"card bg-info text-white"}>
+                            <div className={"card-body bg-info mt-4 mb-4 text-center"}>
+                                <i className="fa fa-info fa-2x" aria-hidden="true"/>
+                                <br/><br/>
+                                <h6>This web still in progress to build, some feature might be can't running perfectly.<br/></h6>
+                                <h6>sorry for our distraction<br/><br/></h6>
+                            </div>
+                        </div>
+                    </div>
+                    <br/>
                     <div className={"card-body bg-light"}>
                         <div className="card bg-success text-white mb-4">
                             <div className="card-body">
