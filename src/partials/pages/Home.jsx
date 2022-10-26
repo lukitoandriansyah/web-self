@@ -7,32 +7,37 @@ import {useEffect, useState} from "react";
 export default function Home() {
     const [isLoading, setIsLoading] = useState(false)
 
-        if (localStorage.getItem("trigger")) {
-            if (pathrule.indexOf(useLocation().pathname).toString() >= 0) {
-                localStorage.setItem("trigger", pathrule.indexOf(useLocation().pathname).toString())
-                if (localStorage.getItem("counter")) {
-                    localStorage.removeItem("counter")
-                    window.location.reload()
+    localStorage.getItem("counter")?
+        ""
+        :
+        localStorage.setItem("counter","1")
 
-                }
-            }
-        } else {
-            localStorage.removeItem("trigger")
-            if (pathrule.indexOf(useLocation().pathname).toString() >= 0) {
-                localStorage.setItem("trigger", pathrule.indexOf(useLocation().pathname).toString())
-                if (localStorage.getItem("counter")) {
-                    localStorage.removeItem("counter")
-                    window.location.reload()
-                }
+    if (localStorage.getItem("trigger")) {
+        if (pathrule.indexOf(useLocation().pathname).toString() >= 0) {
+            localStorage.setItem("trigger", pathrule.indexOf(useLocation().pathname).toString())
+            if (localStorage.getItem("counter")) {
+                localStorage.removeItem("counter")
+                window.location.reload()
+
             }
         }
+    } else {
+        localStorage.removeItem("trigger")
+        if (pathrule.indexOf(useLocation().pathname).toString() >= 0) {
+            localStorage.setItem("trigger", pathrule.indexOf(useLocation().pathname).toString())
+            if (localStorage.getItem("counter")) {
+                localStorage.removeItem("counter")
+                window.location.reload()
+            }
+        }
+    }
 
 
     return <>
         <div id="layoutSidenav">
             <div id="layoutSidenav_content">
                 {
-                    isLoading?
+                    isLoading ?
                         <div className={"d-flex justify-content-center"}>
                             <Spinner/>
                         </div>
@@ -47,7 +52,8 @@ export default function Home() {
                                     <div className={"card bg-light text-white"}>
                                         <div className={"card-body bg-primary mt-4 mb-4 text-center"}>
                                             <h3>Hallo! I'm Lukito Andriansyah<br/><br/></h3>
-                                            <h6>This page would be contain about all my professional activity in programming, song writer, etc.<br/></h6>
+                                            <h6>This page would be contain about all my professional activity in
+                                                programming, song writer, etc.<br/></h6>
                                             <h6>Hopefully we can interacted more intends.<br/><br/></h6>
 
                                             <h5>Regards,<br/></h5>
@@ -64,11 +70,14 @@ export default function Home() {
                                             <div className={"row"}>
                                                 <div className={"col-xl-8 col-md-6"}>
                                                     <div className="card-body text-white">
-                                                        <a onClick={()=>localStorage.setItem("counter","1")} href={"/#/profile"} className={"text-white"}><strong>Profile</strong></a>
+                                                        <a onClick={() => localStorage.setItem("counter", "1")}
+                                                           href={"/#/profile"}
+                                                           className={"text-white"}><strong>Profile</strong></a>
                                                     </div>
                                                 </div>
                                                 <div className={"col-xl-4 col-md-6"}>
-                                                    <div className="card-body"><i className="fa fa-user fa-2x" aria-hidden="true"/></div>
+                                                    <div className="card-body"><i className="fa fa-user fa-2x"
+                                                                                  aria-hidden="true"/></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -80,11 +89,14 @@ export default function Home() {
                                             <div className={"row"}>
                                                 <div className={"col-xl-8 col-md-6"}>
                                                     <div className="card-body text-white">
-                                                        <a onClick={()=>localStorage.setItem("counter","1")} href={"/#/project/lukito"} className={"text-white"}><strong>Project</strong></a>
+                                                        <a onClick={() => localStorage.setItem("counter", "1")}
+                                                           href={"/#/project/lukito"}
+                                                           className={"text-white"}><strong>Project</strong></a>
                                                     </div>
                                                 </div>
                                                 <div className={"col-xl-4 col-md-6"}>
-                                                    <div className="card-body"><i className="fa fa-book-open fa-2x" aria-hidden="true"/></div>
+                                                    <div className="card-body"><i className="fa fa-book-open fa-2x"
+                                                                                  aria-hidden="true"/></div>
                                                 </div>
                                             </div>
                                         </div>
