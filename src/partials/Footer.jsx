@@ -1,3 +1,5 @@
+import qrcode from "../../assets/waQRcode.png";
+
 export default function Footer() {
     return <>
         {/*        <div id="layoutSidenav">*/}
@@ -47,7 +49,7 @@ export default function Footer() {
                                         <br/>
                                         <i>
                                             <img
-                                                src={"src/assets/waQRcode.png"}
+                                                src={qrcode}
                                                 className={"card-img"}
                                             />
                                         </i>

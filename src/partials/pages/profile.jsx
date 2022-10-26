@@ -2,6 +2,9 @@ import {pathrule} from "../../main/pathMain/path.jsx";
 import {Link, Navigate, useLocation} from "react-router-dom";
 import Footer from "../Footer";
 import developer from "../../assets/developer.png";
+import ela from "../../assets/eLA99.jpg";
+import qrcode from "../../assets/waQRcode.png";
+
 
 export default function Profile() {
     if (localStorage.getItem("trigger")) {
@@ -109,7 +112,7 @@ export default function Profile() {
                                                     <div className="col-xl-3 col-md-6">
                                                         <i>
                                                             <br/>
-                                                            <img src={"src/assets/eLA99.jpg"}
+                                                            <img src={ela}
                                                                  className={"card-img rounded-circle"}
                                                             />
                                                             <br/>
