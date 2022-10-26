@@ -1,4 +1,4 @@
-import qrcode from "../../assets/waQRcode.png";
+import qrcode from "../assets/waQRcode.png";
 
 export default function Footer() {
     return <>

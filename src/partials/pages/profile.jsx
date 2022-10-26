@@ -2,7 +2,7 @@ import {pathrule} from "../../main/pathMain/path.jsx";
 import {Link, Navigate, useLocation} from "react-router-dom";
 import Footer from "../Footer";
 import developer from "../../assets/developer.png";
-import ela from "../../assets/eLA99.jpg";
+import ela99 from "../../assets/eLA99.jpg";
 import qrcode from "../../assets/waQRcode.png";
 
 
@@ -112,7 +112,7 @@ export default function Profile() {
                                                     <div className="col-xl-3 col-md-6">
                                                         <i>
                                                             <br/>
-                                                            <img src={ela}
+                                                            <img src={ela99}
                                                                  className={"card-img rounded-circle"}
                                                             />
                                                             <br/>
