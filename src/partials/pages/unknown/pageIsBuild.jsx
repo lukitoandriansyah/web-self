@@ -38,9 +38,11 @@ export  default function PageIsBuild(){
                         <div class="d-flex align-items-center justify-content-between small">
                             <div class="text-muted">Copyright &copy; Lukito Andriansyah 2021</div>
                             <div>
-                                <a href="#">Privacy Policy</a>
-                                &middot;
-                                <a href="#">Terms &amp; Conditions</a>
+                                <div>
+                                    <a href="/#/privacy-policy">Privacy Policy</a>
+                                    &middot;
+                                    <a href="/#/term-condition">Terms &amp; Conditions</a>
+                                </div>
                             </div>
                         </div>
                     </div>
