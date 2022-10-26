@@ -67,13 +67,13 @@ export default function Topbar() {
             <a className="navbar-brand" onClick={() => localStorage.setItem("counter", "1")} href="/#/profile">
                 Profile
             </a>
-            <a className="collapsed navbar-brand" href={"/#/project/lukito"}
-               onClick={() => localStorage.setItem("counter", "1")}
+            <a className="navbar-brand" href={"/#/project/lukito"}
+               /*onClick={() => localStorage.setItem("counter", "1")}
                data-bs-toggle="collapse" data-bs-target="#collapseProject" aria-expanded="false"
-               aria-controls="collapseProject">
+               aria-controls="collapseProject"*/>
                 Projects
             </a>
-            <div className="collapse" id="collapseProject" aria-labelledby="headingOne"
+            {/*<div className="collapse" id="collapseProject" aria-labelledby="headingOne"
                  data-bs-parent="#sidenavAccordion">
                 <nav className="nav">
                     <a className="nav-link" href="/#/project/lukito/backend">BackEnd</a>
@@ -81,7 +81,7 @@ export default function Topbar() {
                     <a className="nav-link" href="/#/project/lukito/novel">Novel</a>
                     <a className="nav-link" href="/#/project/lukito/song">Song</a>
                 </nav>
-            </div>
+            </div>*/}
         </nav>
         <br/>
         <br/>
