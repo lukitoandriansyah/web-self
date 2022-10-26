@@ -74,7 +74,7 @@ export default function Profile() {
                                                         <i>
                                                             <br/>
                                                             <img
-                                                                src={"/#/src/assets/developer.png"}
+                                                                src={"https://lukito-andriansyah-ela-99.vercel.app/src/assets/developer.png"}
                                                                 className={"card-img rounded-circle"}
                                                             />
                                                             <b className="small text-white align-content-center">
