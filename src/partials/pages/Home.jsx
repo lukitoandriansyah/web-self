@@ -49,7 +49,7 @@ export default function Home() {
                                     <div className={"card bg-info text-white"}>
                                         <div className={"card-body bg-info mt-4 mb-4 text-center"}>
                                             <i className="fa fa-info fa-2x" aria-hidden="true"/>
-                                            <br/>
+                                            <br/><br/>
                                             <h6>This web still in progress to build, some feature might be can't running perfectly.<br/></h6>
                                             <h6>sorry for our distraction<br/><br/></h6>
                                         </div>
