@@ -1,6 +1,7 @@
 import {pathrule} from "../../../main/pathMain/path.jsx";
 import {useLocation} from "react-router-dom";
 import Footer from "../../Footer.jsx";
+import Topbar from "../../Topbar";
 
 export default function BackEnd() {
     if (localStorage.getItem("trigger")) {
@@ -25,6 +26,7 @@ export default function BackEnd() {
     return <>
        {/* <div id="layoutSidenav">
             <div id="layoutSidenav_content">*/}
+    <Topbar/>
                 <div className="container-fluid px-4">
                     <div className={"text-center"}>
                         <h1 className="mt-4">Lukito Andriansyah</h1>

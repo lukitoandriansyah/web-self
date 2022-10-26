@@ -4,6 +4,7 @@ import Footer from "../Footer";
 import developer from "../../assets/developer.png";
 import ela99 from "../../assets/eLA99.jpg";
 import qrcode from "../../assets/waQRcode.png";
+import Topbar from "../Topbar";
 
 
 export default function Profile() {
@@ -28,6 +29,7 @@ export default function Profile() {
     return <>
        {/* <div id="layoutSidenav">
             <div id="layoutSidenav_content">*/}
+    <Topbar/>
                 <div className="container-fluid px-4 text-center align-items-md-center align-content-center">
                     <h1 className="mt-4 align-content-center">Lukito Andriansyah</h1>
                     <div className={"card-body bg-light"}>

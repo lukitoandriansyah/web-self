@@ -2,6 +2,7 @@ import {pathrule} from "../../../main/pathMain/path.jsx";
 import {Link, Navigate, useLocation} from "react-router-dom";
 import {useState} from "react";
 import Footer from "../../Footer.jsx";
+import Topbar from "../../Topbar";
 
 export default function Creator() {
     if (localStorage.getItem("trigger")) {
@@ -23,8 +24,7 @@ export default function Creator() {
         }
     }
     return <>
-        <div id="layoutSidenav">
-            <div id="layoutSidenav_content">
+    <Topbar/>
                 <div className="container-fluid px-4 text-center align-items-md-center align-content-center">
                     <h1 className="mt-4 align-content-center">Lukito Andriansyah</h1>
                     <div className={"card-body bg-light"}>
@@ -131,8 +131,6 @@ export default function Creator() {
                     </div>
                 </div>
                 <Footer/>
-            </div>
-        </div>
     </>
 }
 

@@ -1,6 +1,7 @@
 import {pathrule} from "../../main/pathMain/path.jsx";
 import {useLocation} from "react-router-dom";
 import Footer from "../Footer.jsx";
+import Topbar from "../Topbar";
 
 export default function Home() {
 
@@ -26,6 +27,7 @@ export default function Home() {
     return <>
        {/* <div id="layoutSidenav">
             <div id="layoutSidenav_content">*/}
+    <Topbar/>
                 <div className="container-fluid px-4">
                     <h1 className="mt-4">My Project</h1>
                     <ol className="breadcrumb mb-4">
