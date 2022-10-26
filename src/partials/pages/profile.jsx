@@ -26,8 +26,8 @@ export default function Profile() {
         }
     }
     return <>
-        <div id="layoutSidenav">
-            <div id="layoutSidenav_content">
+       {/* <div id="layoutSidenav">
+            <div id="layoutSidenav_content">*/}
                 <div className="container-fluid px-4 text-center align-items-md-center align-content-center">
                     <h1 className="mt-4 align-content-center">Lukito Andriansyah</h1>
                     <div className={"card-body bg-light"}>
@@ -173,8 +173,8 @@ export default function Profile() {
                     </div>
                 </div>
                 <Footer/>
-            </div>
-        </div>
+        {/*    </div>
+        </div>*/}
     </>
 }
 

@@ -24,8 +24,8 @@ export default function Home() {
     }
 
     return <>
-        <div id="layoutSidenav">
-            <div id="layoutSidenav_content">
+       {/* <div id="layoutSidenav">
+            <div id="layoutSidenav_content">*/}
                 <div className="container-fluid px-4">
                     <h1 className="mt-4">My Project</h1>
                     <ol className="breadcrumb mb-4">
@@ -105,8 +105,8 @@ export default function Home() {
                     </div>
                 </div>
                 <Footer/>
-            </div>
-        </div>
+       {/*     </div>
+        </div>*/}
     </>
 }
 

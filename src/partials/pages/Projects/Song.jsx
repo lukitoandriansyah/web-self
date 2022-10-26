@@ -23,8 +23,8 @@ export default function Song() {
     }
 
     return <>
-        <div id="layoutSidenav">
-            <div id="layoutSidenav_content">
+     {/*   <div id="layoutSidenav">
+            <div id="layoutSidenav_content">*/}
                 <div className="container-fluid px-4">
                     <div className={"text-center"}>
                         <h1 className="mt-4">Lukito Andriansyah</h1>
@@ -215,8 +215,8 @@ export default function Song() {
                     </div>
                 </div>
                 <Footer/>
-            </div>
-        </div>
+          {/*  </div>
+        </div>*/}
     </>
 }
 
