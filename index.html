@@ -10,13 +10,6 @@
     <title>Vite + React</title>
     <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet"/>
     <link href="src/css/styles.css" rel="stylesheet"/>
-    <style>
-        @keyframes spin {
-            100% {
-                transform: rotate(360deg);
-            }
-        }
-    </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"
             crossorigin="anonymous"></script>
 
@@ -42,20 +35,5 @@
 <script src="src/assets/demo/chart-bar-demo.js"></script>
 <script crossOrigin="anonymous" src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"></script>
 <script src="src/js/datatables-simple-demo.js"></script>
-<script>
-    document.onreadystatechange = function() {
-        if (document.readyState !== "complete") {
-            document.querySelector(
-                "body").style.visibility = "hidden";
-            document.querySelector(
-                "#loader").style.visibility = "visible";
-        } else {
-            document.querySelector(
-                "#loader").style.display = "none";
-            document.querySelector(
-                "body").style.visibility = "visible";
-        }
-    };
-</script>
 </body>
 </html>
