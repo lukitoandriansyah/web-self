@@ -1,7 +1,7 @@
 import {pathrule} from "../../main/pathMain/path.jsx";
 import {Link, Navigate, useLocation} from "react-router-dom";
 import Footer from "../Footer";
-import {developer} from "../../assets/developer.png";
+import developer from "../../assets/developer.png";
 
 export default function Profile() {
     if (localStorage.getItem("trigger")) {
